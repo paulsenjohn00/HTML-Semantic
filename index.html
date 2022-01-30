@@ -12,8 +12,17 @@
     <meta name="description" content="Clear Horizon is a company based in 
     Utah that is dedicated keeping your windows clean.">
     <title>Clear Horizon Window Cleaning</title>
+    
     <!--Normalized CSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* This is the styling for just the images. */ 
+        img {
+            width: 100%
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -25,6 +34,7 @@
             <li><a>Home</a></li>
             <li><a href="./about/">About</a></li>
             <li><a href="./contact/">Contact</a></li>
+            <li><a href="./form/">Form</a></li>
         </ul>
     </nav>
     <article>
@@ -35,11 +45,24 @@
             a clean one. <strong>Satisfied or get your money back!</strong>
         </p>
     </article>
+    <!--Here are the changing images or HERO image.-->
+    <picture>  
+        <source srcset="images/1600w-window.jpg" 
+               media="(min-width: 901px)">
+        <source srcset="images/900w-window.jpg" 
+               media="(min-width: 501px)">
+        <source srcset="images/500w-window.jpg"
+               media="(max-width: 500px)">
+               
+        <img src="images/900w-window.jpg" 
+               alt="Image of an open window">
+
+     </picture>
     <aside>
         <h3>Ask us more about our services when you see this logo</h3>
         <figure>
-            <img src="images/clearHorizonLogo.PNG" alt="image of company logo" style="width: 300px;">
-            <figcaption>Clearn Horizon Logo</figcaption>
+            <img src="images/clearHorizonsLogo.svg" alt="Company Logo" style="width: 300px;">
+            <figcaption>Clear Horizons Logo</figcaption>
         </figure>
     </aside>
     <article>
@@ -80,9 +103,32 @@
             </li>
         </ol>
     </article>
+    <!--Below is my inline SVG-->
+    <aside>
+        <div>
+            <svg viewBox="0 0 120 120" width="200" height="200">
+              <!-- your SVG markup goes here. You can adjust the viewbox and width and height. -->
+              <circle cx="60" cy="60" r="50"
+          stroke="#AAF0D1" fill="transparent" stroke-width="6"/>
+              <line x1="10" y1="40" x2="110" y2="40" stroke="blue" stroke-width="6"/>
+              <circle cx="80" cy="55" r="5"
+          stroke="black" fill="transparent" stroke-width="4"/>
+              <circle cx="40" cy="55" r="5"
+          stroke="black" fill="transparent" stroke-width="4"/>
+              <line x1="10" y1="40" x2="110" y2="40" stroke="red" stroke-width="3"/>
+              <line x1="60" y1="60" x2="65" y2="70" stroke="green" stroke-width="2"/>
+              <line x1="60" y1="60" x2="55" y2="70" stroke="green" stroke-width="2"/>
+              <line x1="65" y1="70" x2="55" y2="70" stroke="green" stroke-width="2"/>
+              <line x1="35" y1="85" x2="85" y2="85" stroke="red" stroke-width="3"/>
+            </svg>
+          </div>
+    </aside>
+    <!--External link included in the footer-->
     <footer>
         <p><a><em>Clear Horizon is a Utah Valley-based interior and exterior window cleaning firm that provides quality and
-            affordable window cleaning solutions.</em></a></p>
+            affordable window cleaning solutions. 
+            Visit us on <a href="http://www.instagram.com/?hl=en" target="_blank">instagram<a> 
+            to see more of what we do.</em></a></p>
     </footer>
     
 </body>
